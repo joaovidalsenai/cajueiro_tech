@@ -1,4 +1,9 @@
+html {
+    overflow: hidden;
+}
+
 * {
+    scroll-behavior: smooth;
     padding: 0px;
     margin: 0px;
     border: none;
@@ -9,10 +14,48 @@ header {
     position: fixed;
 }
 
+nav {
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(153, 0, 255, 1) 0%, rgba(255, 157, 0, 1) 100%);
+}
+
+.navbar-brand {
+}
+
+.navbar-brand:hover {
+    text-decoration: underline 2px;
+}
+
+.nav-link {
+}
+
+.nav-link:hover {
+    text-decoration: underline 2px;
+}
+
 .secao {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 100vh;
+}
+
+.btn {
+    background: linear-gradient(90deg, rgba(153, 0, 255, 1) 0%, rgba(255, 157, 0, 1) 100%);
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background: white;
+    color: #D25673;
+}
+
+.btn {
+    border: none;
+}
+
+.card {
+    border-color: #D25673;
 }
