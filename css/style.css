@@ -49,7 +49,7 @@ nav {
 
 .btn:hover {
     background: white;
-    color: #D25673;
+    color: rgb(210, 86, 115);
 }
 
 .btn {
@@ -58,4 +58,12 @@ nav {
 
 .card {
     border-color: #D25673;
+}
+
+.svgA {
+    height: 10vw;
+}
+
+form {
+    width: 25vw;
 }
