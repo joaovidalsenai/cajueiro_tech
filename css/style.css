@@ -12,6 +12,7 @@ html {
 
 header {
     position: fixed;
+    z-index: 1;
 }
 
 nav {
@@ -42,7 +43,7 @@ nav {
 }
 
 .btn {
-    background: linear-gradient(90deg, rgba(153, 0, 255, 1) 0%, rgba(255, 157, 0, 1) 100%);
+    background: linear-gradient(90deg, #9900ff 0%, #ff9d00 100%);
     font-weight: 600;
     box-sizing: border-box;
 }
@@ -52,12 +53,8 @@ nav {
     color: rgb(210, 86, 115);
 }
 
-.btn {
+.btn, .card{
     border: none;
-}
-
-.card {
-    border-color: #D25673;
 }
 
 .svgA {
@@ -66,4 +63,15 @@ nav {
 
 form {
     width: 25vw;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  #home-svg {
+    display: none;
+  }
 }
