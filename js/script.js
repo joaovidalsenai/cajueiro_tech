@@ -8,6 +8,7 @@ const validoNome = function() {return nameformat.test(document.getElementById("n
 function verificForm() {
     let formValido = true;
     let assunto = document.getElementById("assunto").value.toString()
+    
     if (!validoNome()) {
         document.getElementById("msg-nome").innerHTML = "Insira um nome válido, por exemplo: João Silva" 
         formValido = false;
@@ -24,11 +25,21 @@ function verificForm() {
         document.getElementById("msg-email").innerHTML = ""
     }
 
-    if (assunto.length < 10 || assunto.length > 60) {
+    if (assunto.length < 10 || assunto.length > 40) {
+        formValido = false;
         if (assunto.length < 10) document.getElementById("msg-assunto").innerHTML = "O assunto deve ter no mínimo 10 caracteres"
-        else document.getElementById("msg-assunto").innerHTML = "O assunto deve ter no máximo 60 caracteres"
-    } else {
+        else document.getElementById("msg-assunto").innerHTML = "O assunto deve ter no máximo 40 caracteres"
+    }
+    else {
         document.getElementById("msg-assunto").innerHTML = ""
+    }
+
+    if (document.getElementById("msg").value.toString().length < 45) {
+        formValido = false;
+        document.getElementById("msg-menssagem").innerHTML = "O assunto deve ter no mínimo 10 caracteres"
+    }
+    else {
+        document.getElementById("msg-mensagem me").innerHTML = ""
     }
 }
 
