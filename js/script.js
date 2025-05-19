@@ -44,7 +44,7 @@ function verificForm() {
     if (formValido) {
         document.getElementById("form-contato").submit()
         document.getElementById("form-contato").reset()
-        
+        document.getElementById(`form-finalizado`).style.display = `block`
     }
 }
 
