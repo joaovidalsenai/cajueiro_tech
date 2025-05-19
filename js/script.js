@@ -9,9 +9,16 @@ function verificForm() {
     if (!validoNome()) {
         document.getElementById("msg-nome").innerHTML = "Insira um nome válido, por exemplo: João Silva"
     }
+    else {
+        document.getElementById("msg-nome").innerHTML = ""
+    }
 
     if (!validoEmail()) {
         document.getElementById("msg-email").innerHTML = "Insira um endereço de e-mail válido, por exemplo: very.common@example.com."
+        return
+    }
+    else {
+        document.getElementById("msg-email").innerHTML = ""
     }
 }
 
