@@ -42,9 +42,20 @@ function verificForm() {
         document.getElementById("msg-mensagem").innerHTML = ""
     }
     if (formValido) {
-        document.getElementById("form-contato").submit()
+        document.getElementById("ctt-obrgd").innerText = `Obrigado por nos procurar ${document.getElementById("nome").value.toString().trim().split(" ")[0]}!`
+        document.getElementById("form-finalizado").style.display = "block"
         document.getElementById("form-contato").reset()
-        document.getElementById(`form-finalizado`).style.display = `block`
+        
+        const element = document.getElementById("form-finalizado");
+        const offset = 100;
+
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
     }
 }
 
