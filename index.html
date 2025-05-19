@@ -8,7 +8,6 @@
     <title>Cajueiro Tech</title>
 </head>
 <body>
-    <!-- Header com navegação fixa -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
@@ -35,7 +34,6 @@
     </header>
 
     <main>
-        <!-- Seção Home -->
         <section class="secao" id="home">
             <div class="container">
                 <div class="row align-items-center">
@@ -54,8 +52,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Seção Sobre -->
         <section class="secao" id="sobre">
             <div class="container">
                 <h2 class="section-title text-center mb-5">Sobre Nós</h2>
@@ -95,8 +91,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Seção Cursos -->
         <section class="secao" id="cursos">
             <div class="container">
                 <h2 class="section-title text-center mb-5">Nossos Cursos</h2>
@@ -122,7 +116,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="col-md-4">
                         <div class="card curso-card h-100">
                             <div class="curso-img-placeholder"></div>
@@ -136,8 +129,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Seção Contato -->
         <section class="secao" id="contato">
             <div class="container">
                 <div class="row justify-content-center">
@@ -149,21 +140,25 @@
                                     <div class="mb-3">
                                         <label for="nome" class="form-label">Nome</label>
                                         <input type="text" class="form-control" id="nome" placeholder="Seu nome completo">
+                                        <p id="msg-nome" class="msg-input"></p>
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Endereço de E-mail</label>
                                         <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                                        <p id="msg-email" class="msg-input"></p>
                                     </div>
                                     <div class="mb-3">
                                         <label for="assunto" class="form-label">Assunto</label>
-                                        <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem">
+                                        <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem" maxlength="60">
+                                        <p id="msg-assunto" class="msg-input"></p>
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="msg">Mensagem</label>
                                         <textarea name="msg" id="msg" class="form-control" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+                                        <p id="msg-mensagem" class="msg-input"></p>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                                        <button type="button" onclick="verificForm()" class="btn btn-primary btn-lg">Enviar Mensagem</button>
                                     </div>
                                 </form>
                             </div>
@@ -173,8 +168,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer class="footer py-4">
         <div class="container">
             <div class="row">
@@ -188,7 +181,7 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
