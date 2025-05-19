@@ -25,18 +25,18 @@ function verificForm() {
         document.getElementById("msg-email").innerHTML = ""
     }
 
-    if (assunto.length < 10 || assunto.length > 40) {
+    if (assunto.length < 10 || assunto.length > 47) {
         formValido = false;
         if (assunto.length < 10) document.getElementById("msg-assunto").innerHTML = "O assunto deve ter no mínimo 10 caracteres"
-        else document.getElementById("msg-assunto").innerHTML = "O assunto deve ter no máximo 40 caracteres"
+        else document.getElementById("msg-assunto").innerHTML = "O assunto deve ter no máximo 47 caracteres"
     }
     else {
         document.getElementById("msg-assunto").innerHTML = ""
     }
 
-    if (document.getElementById("msg").value.toString().length < 45) {
+    if (document.getElementById("msg").value.toString().length < 50) {
         formValido = false;
-        document.getElementById("msg-menssagem").innerHTML = "O assunto deve ter no mínimo 10 caracteres"
+        document.getElementById("msg-mensagem").innerHTML = "A mensagem deve ter no mínimo 10 caracteres"
     }
     else {
         document.getElementById("msg-mensagem me").innerHTML = ""
