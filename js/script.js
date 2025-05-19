@@ -36,10 +36,13 @@ function verificForm() {
 
     if (document.getElementById("msg").value.toString().length < 50) {
         formValido = false;
-        document.getElementById("msg-mensagem").innerHTML = "A mensagem deve ter no mínimo 10 caracteres"
+        document.getElementById("msg-mensagem").innerHTML = "A mensagem deve ter no mínimo 50 caracteres"
     }
     else {
-        document.getElementById("msg-mensagem me").innerHTML = ""
+        document.getElementById("msg-mensagem").innerHTML = ""
+    }
+    if (formValido) {
+        document.getElementById("form-contato").submit()
     }
 }
 
