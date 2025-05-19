@@ -154,6 +154,10 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+.msg-input {
+    color: crimson;
+}
+
 .footer {
     background: var(--card-bg);
     color: var(--text-color);

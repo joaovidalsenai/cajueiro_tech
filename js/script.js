@@ -6,8 +6,9 @@ const validoEmail = function() {return emailformat.test(document.getElementById(
 const validoNome = function() {return nameformat.test(document.getElementById("nome").value.toString())}
 
 function verificForm() {
+    
     if (!validoNome()) {
-        document.getElementById("msg-nome").innerHTML = "Insira um nome válido, por exemplo: João Silva"
+        document.getElementById("msg-nome").innerHTML = "Insira um nome válido, por exemplo: João Silva" 
     }
     else {
         document.getElementById("msg-nome").innerHTML = ""
